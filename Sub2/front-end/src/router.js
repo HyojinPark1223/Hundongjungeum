@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Loading from './views/Loading.vue'
 import Main from './views/Main.vue'
+import Intro from './views/Intro.vue'
+import Story from './views/Story.vue'
 
 Vue.use(Router)
 
@@ -18,6 +20,16 @@ export default new Router({
     path: '/Main',
     name: 'Main',
     component: Main
+  },
+  {
+    path: '/Intro',
+    name: 'Intro',
+    component: Intro
+  },
+  {
+    path: '/Story/:storyNum',
+    name: 'Story',
+    component: Story
   },
   ]
 })
