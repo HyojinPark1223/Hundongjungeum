@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Loading from './views/Loading.vue'
 import Main from './views/Main.vue'
 import Intro from './views/Intro.vue'
-import Story from './views/Story.vue'
+import ForestStory from './views/ForestStory.vue'
 
 Vue.use(Router)
 
@@ -27,9 +27,9 @@ export default new Router({
     component: Intro
   },
   {
-    path: '/Story/:storyNum',
-    name: 'Story',
-    component: Story
+    path: '/ForestStory/:storyNum',
+    name: 'ForestStory',
+    component: ForestStory
   },
   ]
 })
