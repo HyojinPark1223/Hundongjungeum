@@ -1,9 +1,12 @@
 <template>
-  <div>
-    <h2>this is Loading</h2>
-    <router-link :to="{name:'Main'}" exact>
-      <h1>시작</h1>
-    </router-link>
+  <div class="loading-container">
+    <div class="wrapper fadeInDown">
+      <div class="fadeIn first" style="margin-top: 50px; margin-bottom: 50px;">
+        <router-link :to="{name:'Main'}" exact>
+          <img src="@/assets/images/hundong.png" alt="" id="icon" />
+        </router-link>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -13,5 +16,5 @@ export default {
 </script>
 
 <style>
-
+  @import '../components/css/Loading.css';
 </style>
