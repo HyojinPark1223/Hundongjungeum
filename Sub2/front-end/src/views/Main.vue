@@ -5,9 +5,10 @@
     <!-- 2) <p @click="$router.push('/Intro')">to Intro</p> -->
     <!-- 모두 위와 같은 효과임 -->
 
-    <p class="main-title">어떤 이야기를 만들어 볼까요?</p>
+    <p class="main-title">"어떤 이야기를 만들어 볼까요?"</p>
     <div class="backgrounds">
-      <div class="img-box">
+      <div class="img-box" @click="$router.push({ name: 'Intro' })">
+        <p class="bg-text">무도회장</p>
         <img
           class="bg-img"
           src="../assets/backgrounds-part/ballroom2-part.png"
@@ -15,6 +16,7 @@
         />
       </div>
       <div class="img-box">
+        <p class="bg-text">숲 속</p>
         <img
           class="bg-img"
           src="../assets/backgrounds-part/forest-part.png"
@@ -22,6 +24,7 @@
         />
       </div>
       <div class="img-box">
+        <p class="bg-text">바다</p>
         <img
           class="bg-img"
           src="../assets/backgrounds-part/ocean2-part.png"
@@ -29,6 +32,7 @@
         />
       </div>
       <div class="img-box">
+        <p class="bg-text">마을</p>
         <img
           class="bg-img"
           src="../assets/backgrounds-part/town-part.png"
@@ -44,35 +48,5 @@ export default {};
 </script>
 
 <style>
-.main-screen {
-  display: flex;
-  flex-direction: column;
-}
-
-.main-title {
-  font-size: 5rem;
-  margin-top: 2rem;
-  margin-top: 2rem;
-}
-
-.backgrounds {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.img-box {
-  border: black solid 1px;
-  border-radius: 10px;
-  width: 20%;
-  max-width: 30rem;
-  height: 60rem;
-  overflow: hidden;
-}
-
-.bg-img {
-  height: 60rem;
-  object-fit: cover;
-  vertical-align: middle;
-}
+@import "../components/css/Main.css";
 </style>
