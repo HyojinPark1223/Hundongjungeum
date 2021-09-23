@@ -23,7 +23,7 @@
           alt="숲 속"
         />
       </div>
-      <div class="img-box">
+      <div class="img-box" @click="$router.push({ path:'/OceanStory/1'})">
         <p class="bg-text">바다</p>
         <img
           class="bg-img"

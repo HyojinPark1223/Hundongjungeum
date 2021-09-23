@@ -4,6 +4,7 @@ import Loading from './views/Loading.vue'
 import Main from './views/Main.vue'
 import Intro from './views/Intro.vue'
 import ForestStory from './views/ForestStory.vue'
+import OceanStory from './views/OceanStory.vue'
 
 Vue.use(Router)
 
@@ -30,6 +31,11 @@ export default new Router({
     path: '/ForestStory/:storyNum',
     name: 'ForestStory',
     component: ForestStory
+  },
+  {
+    path: '/OceanStory/:storyNum',
+    name: 'OceanStory',
+    component: OceanStory
   },
   ]
 })
