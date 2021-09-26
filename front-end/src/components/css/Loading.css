@@ -14,12 +14,8 @@ body {
     align-items: center;
     flex-direction: column; 
     justify-content: center;
-    width: 100%;
-    min-height: 100%;
-}
-
-.apibox {
-    margin-bottom: 50px;
+    width: 98vw;
+    min-height: 95vh;
 }
 
 .easy {

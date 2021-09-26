@@ -15,6 +15,7 @@
           alt="무도회장"
         />
       </div>
+      
       <div class="img-box">
         <p class="bg-text-forest">숲 속</p>
         <img
