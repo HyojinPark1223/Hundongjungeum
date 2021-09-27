@@ -6,7 +6,7 @@
 }
 
 .main-title {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-top: 2rem;
   font-family: cursive;
 }
@@ -20,8 +20,8 @@
 .img-box {
   border: black solid 1px;
   border-radius: 10px;
-  width: 20%;
-  max-width: 20rem;
+  width: 25%;
+  max-width: 22rem;
   height: 50rem;
   overflow: hidden;
   cursor: pointer;
@@ -30,33 +30,42 @@
 .img-box:hover {
   border: black solid 5px;
   border-radius: 10px;
+  transition: all .15s ;
+}
+
+#ocean-id {
+  object-fit:scale-down;
 }
 
 .bg-text-ballroom {
   color: orange;
   position: absolute;
-  width: 20%;
+  width: 25%;
+  max-width: 22rem;
   font-size: 4rem;
   font-family: cursive;
 }
 .bg-text-forest {
   color: green;
   position: absolute;
-  width: 20%;
+  width: 25%;
+  max-width: 22rem;
   font-size: 4rem;
   font-family: cursive;
 }
 .bg-text-ocean {
   color: blue;
   position: absolute;
-  width: 20%;
+  width: 25%;
+  max-width: 22rem;
   font-size: 4rem;
   font-family: cursive;
 }
 .bg-text-village {
   color: rgb(114, 81, 19);
   position: absolute;
-  width: 20%;
+  width: 25%;
+  max-width: 22rem;
   font-size: 4rem;
   font-family: cursive;
 }
@@ -70,4 +79,31 @@
 
 .bg-img:hover {
   opacity: 50%;
+}
+
+.ballroom-box {
+  animation-name: move-box;
+  animation-duration: 1s;
+}
+.forest-box {
+  animation-name: move-box;
+  animation-duration: 1s;
+  /* animation-delay: 0.5s; */
+}
+.ocean-box {
+  animation-name: move-box;
+  animation-duration: 1s;
+}
+.village-box {
+  animation-name: move-box;
+  animation-duration: 1s;
+}
+
+@keyframes move-box {
+  from {
+    margin-top: 1500px;
+  }
+  to {
+    margin-left: 0px;
+  }
 }
