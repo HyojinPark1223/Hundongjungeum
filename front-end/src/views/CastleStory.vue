@@ -2,7 +2,17 @@
   <div class="castle-box">
     <div class="to-back">←</div>
     <div class="middle-boxes">
-      <div class="icon-box">[아이콘 박스]</div>
+      <div class="icon-box">
+        <div
+          style="width: 80px; height: 80px; display: inline-block;"
+          v-for="(item, index) in imgs"
+          :key="index"
+        >
+          <movable
+            ><img style="width: 80px; height: 80px" :src="item" alt=""
+          /></movable>
+        </div>
+      </div>
       <div class="right-boxes">
         <div class="full-img">[전체그림]</div>
         <div class="small-boxes">
@@ -19,10 +29,186 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      imgs: [
+        "/img/fish.cba00717.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+        "/img/clam.cc9fb023.png",
+      ],
+    };
+  },
+};
 </script>
 
 <style>
+img {
+  width: 5rem;
+  z-index: -6;
+}
+
+h1 {
+  position: relative;
+}
+
 .castle-box {
   display: flex;
   flex-direction: column;
@@ -46,6 +232,9 @@ export default {};
   border: 1px solid black;
   background: #c4c4c4;
   width: 20%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 0;
 }
 
 .right-boxes {
