@@ -15,7 +15,8 @@ export default {
       width: 65vw;
       border: 1px solid black;
       position: absolute;
-      right: 100px;
+      right: 4%;
       background-image: url("../../../assets/background/seawater.jpg");
+      z-index: -9999;
   }
 </style>
