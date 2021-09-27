@@ -14,8 +14,9 @@
       width: 4rem;
       border: 1px solid black;
       position: absolute;
-      right: 100px;
-      bottom: 85px;
+      right:  3%;
+      bottom: 6%;
+      margin: 20px 0px;
       background-color: #f48fb1;
       font-size: 1rem;
       border-radius: 12px;

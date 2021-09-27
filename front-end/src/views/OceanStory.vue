@@ -8,7 +8,7 @@
         <artboard />
       </div>
         <router-link @click="[normal,numUp,refreshAll]" :to="{path:'/OceanStory/'+num}" class="nextbtn">
-            다음 장
+            완성
         </router-link>
       <storyTextarea />
   </div>

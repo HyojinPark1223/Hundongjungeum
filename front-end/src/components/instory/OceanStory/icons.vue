@@ -44,8 +44,9 @@ export default {
       background-color: #f5f5f5;
       border-radius: 4px;
       overflow-y:visible;
-      /* overflow-x:hidden; */
+      /* overflow-x:auto; */
       /* white-space: nowrap; */
+      /* z-index: -999; */
       }
 
 .icons::-webkit-scrollbar{

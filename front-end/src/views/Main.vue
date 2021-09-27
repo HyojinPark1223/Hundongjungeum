@@ -7,7 +7,7 @@
 
     <p class="main-title">"어떤 이야기를 만들어 볼까요?"</p>
     <div class="backgrounds">
-      <div class="img-box" @click="$router.push({ path: '/CastleStory/1' })">
+      <div class="img-box ballroom-box" @click="$router.push({ path: '/CastleStory/1' })">
         <p class="bg-text-ballroom">무도회장</p>
         <img
           class="bg-img"
@@ -15,8 +15,8 @@
           alt="무도회장"
         />
       </div>
-
-      <div class="img-box">
+      
+      <div class="img-box forest-box">
         <p class="bg-text-forest">숲 속</p>
         <img
           class="bg-img"
@@ -24,15 +24,16 @@
           alt="숲 속"
         />
       </div>
-      <div class="img-box" @click="$router.push({ path: '/OceanStory/1' })">
+      <div class="img-box ocean-box" @click="$router.push({ path:'/OceanStory/1'})">
         <p class="bg-text-ocean">바다</p>
         <img
           class="bg-img"
           src="../assets/backgrounds-part/ocean2-part.png"
           alt="바다"
+          id="ocean-id"
         />
       </div>
-      <div class="img-box">
+      <div class="img-box village-box">
         <p class="bg-text-village">마을</p>
         <img
           class="bg-img"

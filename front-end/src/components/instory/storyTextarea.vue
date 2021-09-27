@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="textarea">
-      <div class="icon-box">
+      <div class="storyTextarea-icon-box">
         <img class="listening-icon" src="@/assets/icons/listening.png" alt="">
       </div>
       </div>    
@@ -28,7 +28,7 @@ export default {
       border-radius: 12px;
   }
 
-  .icon-box {
+  .storyTextarea-icon-box {
     position: relative;
     height: 50px;
     width: 90vw;
