@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+    .back-to-main-arrow{
+    max-width: 30px;
+    max-height: 30px;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    cursor: pointer;
+  }
+
+  .nextbtn {
+      height: 2rem;
+      width: 4rem;
+      border: 1px solid black;
+      position: absolute;
+      right:  3%;
+      bottom: 6%;
+      margin: 20px 0px;
+      background-color: #f48fb1;
+      font-size: 1rem;
+      border-radius: 12px;
+      padding-top: 5px;
+  }
+  
+  .OceanStory-container{
+      margin-top: 3%;
+      height: 90vh;
+      width: 100vw;
+      /* width: 100vw;
+      height: 100vh;
+      z-index: 9999; */
+  }
+
+  /* .OceanStory-top-container{
+      max-width: 92vw;
+      max-height: 80vh;
+      height: 80%;
+      display: flex;
+  } */
